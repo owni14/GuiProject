@@ -95,7 +95,7 @@ public class MemberFindPw extends JFrame implements ActionListener{
 			
 			// Check the result from findPw method in MemberDao
 			if (pw != null) {
-				JOptionPane.showMessageDialog(this, "Your id password '" + pw + "'");
+				JOptionPane.showMessageDialog(this, "Your password id '" + pw + "'");
 			} else {
 				JOptionPane.showMessageDialog(this, "We can't find your password, please check your id" );
 			}

@@ -131,10 +131,10 @@ public class MemberLogin extends JFrame implements ActionListener{
 			if (adminMode.isSelected()) {
 				// Admin login result
 				if (id.equals(ADMIN_ID) && pw.equals(ADMIN_PW)) {
-					JOptionPane.showMessageDialog(this, "Completion of login for admin");
+					JOptionPane.showMessageDialog(this, "Login has been completed for admin");
 					MemberList list = new MemberList();
 				} else {
-					JOptionPane.showMessageDialog(this, "Fail to login for admin, Check admin id or password");
+					JOptionPane.showMessageDialog(this, "Fail to login for admin, Check admin id and password");
 				}
 			} else {
 				// Login result gets true or false from MemberDao
@@ -144,11 +144,11 @@ public class MemberLogin extends JFrame implements ActionListener{
 						// If you didn't check the administrator mode, we can alert you a message
 						JOptionPane.showMessageDialog(this, "Select Administrator Mode");
 					} else {
-						JOptionPane.showMessageDialog(this, "Completion of login for user");
+						JOptionPane.showMessageDialog(this, "Login has been completed for user");
 						MemberWindow mbWindow = new MemberWindow();
 					}
 				} else {
-					JOptionPane.showMessageDialog(this, "Fail to login, Check your id or password");
+					JOptionPane.showMessageDialog(this, "Fail to login, Check your id and password");
 				}
 			}
 		} else if (source == btnRegister) {

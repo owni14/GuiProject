@@ -128,9 +128,9 @@ public class MemberRegister extends JFrame implements ActionListener {
 			// Check insertResult
 			Boolean insertRs = dao.insertData(vo);
 			if (insertRs == true) {
-				JOptionPane.showMessageDialog(this, "Completion of membership registration");
+				JOptionPane.showMessageDialog(this, "Register has been completed");
 			} else {
-				JOptionPane.showMessageDialog(this, "Fail of membership registration, Write all of text and selection that male or female");
+				JOptionPane.showMessageDialog(this, "Fail to membership registration, Write all of text and selection that male or female");
 			}
 			dispose(); // return to native windows
 		} else {
@@ -158,7 +158,7 @@ public class MemberRegister extends JFrame implements ActionListener {
 		vo = new MemberVo(get[NAME], getGender, get[BIRTH], get[ID], get[PW], get[TEL], today);
 		 
 		// Check the id and tel because we don't allow to make duplication
-		int checkDplId = dao.checkDuplicationTel(get[ID]);
+		int checkDplId = dao.checkDuplicationId(get[ID]);
 		int checkDplTel = dao.checkDuplicationTel(get[TEL]);
 		if (checkDplId == 1) {
 			JOptionPane.showMessageDialog(this, "Exist same id");

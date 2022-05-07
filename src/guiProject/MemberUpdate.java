@@ -137,7 +137,7 @@ public class MemberUpdate extends JFrame implements ActionListener {
 			// Check updateResult
 			Boolean updateRs = dao.updateData(vo);
 			if (updateRs == true) {
-				JOptionPane.showMessageDialog(this, "Complete update");
+				JOptionPane.showMessageDialog(this, "Update has been completed");
 			} else {
 				JOptionPane.showMessageDialog(this, "Fail to update");
 			}
