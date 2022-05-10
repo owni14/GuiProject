@@ -130,7 +130,7 @@ public class MemberRegister extends JFrame implements ActionListener {
 			if (insertRs == true) {
 				JOptionPane.showMessageDialog(this, "Register has been completed");
 			} else {
-				JOptionPane.showMessageDialog(this, "Fail to membership registration, Write all of text and selection that male or female");
+				JOptionPane.showMessageDialog(this, "Fail to membership registration, Write all of text and select that male or female");
 			}
 			dispose(); // return to native windows
 		} else {
